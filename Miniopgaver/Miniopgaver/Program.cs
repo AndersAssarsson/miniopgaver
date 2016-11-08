@@ -17,12 +17,12 @@ namespace Miniopgaver
             Opgave2();
             Opgave3();
             Opgave4();
-            //Opgave5();
+            Opgave5();
 
             Debug.WriteLine("------------------------");
-
+            Console.ReadKey();
         }
-     
+
         static void Opgave1()
         {
             Debug.WriteLine("Hello");
@@ -55,6 +55,19 @@ namespace Miniopgaver
 
         private static void Opgave5()
         {
+            int number1;
+            int number2;
+            int multiplication;
 
+            Console.WriteLine("Enter 1st number");
+            number1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter 2nd number");
+            number2 = Convert.ToInt32(Console.ReadLine());
+
+            multiplication = number1 * number2;
+            Console.WriteLine("The multiplication is:");
+            Console.WriteLine(multiplication);
+           
         }
+    }
 }
